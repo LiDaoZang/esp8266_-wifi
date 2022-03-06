@@ -1,0 +1,142 @@
+/* 
+    Document   : Page Custom
+    Created on : 2012-12-17
+    Author     : lkf3571
+    Description: Page Client
+*/
+body {
+    font-size: 14px;
+    font-family: arial;
+    background-color: #ffffff;
+}
+
+div.pc-content {
+    
+    height: 680px;
+    background: none;
+    margin: 0px auto;
+	padding: 0px;
+	border: 0px solid #eee;
+	position: relative;
+    
+}
+
+div.phone-content {
+    width: 100%;
+    height: 100%;
+    background: none;
+    margin: 0px;
+	padding: 0px;
+	border: 0px solid #eee;
+    background-color: #ffffff;
+}
+
+div.pc-phone-content-logo {
+	max-width: 100%;
+	z-index: 1;
+}
+
+div.pc-phone-content-logo img {
+	max-width: 100%;
+}
+
+.pc-event-draggable {
+    position: absolute;
+}
+
+div.pc-default-text {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #dddddd;
+	background-color: none;
+	width : 200px;
+    height : 150px;
+    left : 0px;
+    top : 0px;
+}
+
+div.pc-edited-text {
+	overflow: hidden;
+	word-wrap:break-word;
+}
+
+label.pc-edited-text {
+    word-wrap: break-word;
+    overflow: inherit;
+}
+
+div.pc-edited-text * {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+div.pc-phone-content-logo {
+    height: 12%;
+    position: relative !important;
+    z-index: 1;
+}
+
+.pc-phone-bgImage {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pc-ui-button {
+	border-radius: 4px 4px 4px 4px;
+	background-color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 0.1em;
+	overflow: visible;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	text-decoration: none !important;
+	border: 2px solid #CCCCCC;
+	color: #1C94C4;
+	font-weight: bold;
+}
+
+.ui-select .ui-btn-text {
+    text-align: left!important;
+    font-weight:normal;
+}
+
+div.pc-copyright {
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	position: fixed;
+	bottom: 40px;
+	right: 20px;
+	border: none;
+	zIndex: 10000;
+}
+/* 处理IE6下对position:fixed不兼容的问题*/
+* html {
+	background-image: url(about:blank);
+	background-attachment: fixed;
+}
+
+div.pc-copyright-ie6 {
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	position: absolute;
+	bottom: auto;
+	clear: both;
+	border: none;
+	zIndex: 10000;
+	top: expression(eval(document.compatMode &&    
+		   document.compatMode ==     'CSS1Compat')?    
+		documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight
+		)-    40:    document.body.scrollTop+(document.body.clientHeight-this.clientHeight
+		)-    40 );
+	left: expression(eval(document.compatMode &&    
+		   document.compatMode ==     'CSS1Compat')?    
+		documentElement.scrollLeft+(documentElement.clientWidth-this.clientWidth
+		)-    20:    document.body.scrollLeft+(document.body.clientWidth-this.clientWidth
+		)-    20 );
+}

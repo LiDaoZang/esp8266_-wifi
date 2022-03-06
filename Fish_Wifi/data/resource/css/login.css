@@ -1,0 +1,78 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	width: 100%;
+	height: 100%;
+	background: #111;
+}
+
+.apImgTitle {
+	position: fixed;
+	width: 42%;
+	left: 30%;
+	top: 30%;
+}
+
+.apTitle {
+    font-size: 30px;
+    color: #fff;
+    position: fixed;
+    top: 32%;
+    width: 100%;
+    text-align: center;
+}
+
+.logcon {
+position: fixed;
+    width: 100%;
+    top: 47%;
+    text-align: center;
+}
+
+.apdown{
+	font-size:18px;
+	color:#fff
+}
+
+.logcon input {
+	padding: 10px 15px;
+	border-radius: 3px;
+	border: none;
+	margin-right: 10px;
+	width: 220px;
+}
+
+.logcon button {
+	padding: 7px 20px 10px 20px;
+	border: none;
+	background: #fff;
+	border-radius: 3px;
+}
+
+.logcon button:hover {
+	cursor: pointer;
+}
+
+canvas {
+	display: block;
+	vertical-align: bottom;
+}
+
+#particles-js {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
